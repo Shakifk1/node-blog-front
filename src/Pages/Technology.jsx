@@ -6,7 +6,8 @@ export const Technology = () => {
     // const [detail] = useContext(store);
     const [detail,setDetail]=useState([])
     useEffect(()=>{
-        fetch("http://localhost:4000/")
+        // fetch("http://localhost:4000/")
+        fetch("https://node-blog-3n9c.onrender.com/")
         .then(res=>(res.json()))
         .then((res)=>setDetail(res))
     },[])
